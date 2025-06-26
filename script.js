@@ -14,10 +14,16 @@ function get_new_disc() {
 
 
 window.onload = function () {
+  console.log("Here is the list of discs:")
+  /*
 for(let index= 0; index<disc_collection.length; index++){
-console.log("Disc at location " + index + "is " + disc_collection[index])
-}
+console.log("Disc at location " + index + " is " + disc_collection[index])
+}*/
 
+for (let disc of disc_collection){
+console.log(disc);
+}
+console.log("End of list of discs")
   get_new_disc();
 //alert ("script.js has loaded!");
 /*console.log(random_num);
