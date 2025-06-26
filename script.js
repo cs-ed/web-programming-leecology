@@ -32,6 +32,11 @@ console.log(disc_collection[random_num]);*/
 
 document.getElementById("new_disc").addEventListener("click",get_new_disc);
 
-
+document.getElementById("add_score").addEventListener("click", function {
+const score_block= document.createElement("div");
+score_block.className= "total_blocks"
+score_block.innerHTML= getElementById("score_entry").value;
+document.getElementById("score_average").appendChild("score_block");
+})
 
 
