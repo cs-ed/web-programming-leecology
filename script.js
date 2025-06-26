@@ -32,11 +32,17 @@ console.log(disc_collection[random_num]);*/
 
 document.getElementById("new_disc").addEventListener("click",get_new_disc);
 
-document.getElementById("enter_score").addEventListener("click", function {
+
+document.getElementById("enter_score").addEventListener("click", function() {
+  if (document.getElementById("score_entry").value !="") {
 const score_block= document.createElement("div");
-score_block.className= "total_blocks";
-score_block.innerHTML= getElementById("score_entry").value;
-document.getElementById("score_average").appendChild("score_block");
+score_block.className= "choreList";
+score_block.innerHTML= "Average score of "+document.getElementById("score_entry").value;
+document.getElementById("score_average").appendChild(score_block);
+
+}
+else {document.getElementById("score_error").innerHTML="Error in entering score"}
 })
+
 
 
